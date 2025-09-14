@@ -1,45 +1,89 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Library</title>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
 
+    .book-library {
+      background-color: #ffffff;
+      padding: 20px;
+      
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .book {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .book img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .book-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .book-author {
+      color: #777777;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .book-price {
+      color: #2ecc71;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
-	<body>
 
   <div class="book-library">
-    <!-- Book 1 -->
     <div class="book">
-      <img src="https://via.placeholder.com/150x220?text=Spy+in+the+Amber" alt="Spy in the Amber">
-      <h3>Spy in the Amber</h3>
-      <p class="author">By Khushwant Singh</p>
-      <p class="price">$10.99</p>
+      <img src="https://storage.googleapis.com/acciojob-open-file-collections/spy-in-the-amber.png" alt="Spy in the Amber" />
+      <div class="book-title">Spy in the Amber</div>
+      <div class="book-author">Manohar Malgonkar</div>
+      <div class="book-price">Rs. 299</div>
     </div>
 
-    <!-- Book 2 -->
     <div class="book">
-      <img src="https://via.placeholder.com/150x220?text=Sacred+Games" alt="Sacred Games">
-      <h3>Sacred Games</h3>
-      <p class="author">By Vikram Chandra</p>
-      <p class="price">$14.99</p>
+      <img src="https://storage.googleapis.com/acciojob-open-file-collections/sacred-games.png" alt="Sacred Games" />
+      <div class="book-title">Sacred Games</div>
+      <div class="book-author">Vikram Chandra</div>
+      <div class="book-price">Rs. 199</div>
     </div>
 
-    <!-- Book 3 -->
     <div class="book">
-      <img src="https://via.placeholder.com/150x220?text=Byomkesh+Bakshi" alt="Byomkesh Bakshi">
-      <h3>Byomkesh Bakshi</h3>
-      <p class="author">By Sharadindu Bandyopadhyay</p>
-      <p class="price">$9.49</p>
+      <img src="https://storage.googleapis.com/acciojob-open-file-collections/byomkesh-bakshi.png" alt="Byomkesh Bakshi" />
+      <div class="book-title">Byomkesh Bakshi Stories</div>
+      <div class="book-author">Sharadindu Bandyopadhyay</div>
+      <div class="book-price">Rs. 249</div>
     </div>
   </div>
 
 </body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
 </html>
+
